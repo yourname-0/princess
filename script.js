@@ -21,3 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   
 
+  window.onload = function() {
+    let audio1 = new Audio("aud.mp3");
+    audio1.play();
+  }
