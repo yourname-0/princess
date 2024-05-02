@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint from princess</title>
+</head>
+<body>
+    <center>
+        <h1 style="color: white; margin-top: 70px; font-size: 3rem;">Birthday review</h1>
+        <iframe style="margin-top: 50px;" src="https://docs.google.com/forms/d/e/1FAIpQLSe2U7zqFeUP9ARzDaOgJwpRgKPf4cOGXKIglYvbPNeQd7Vrjw/viewform?embedded=true" width="640" height="430" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </center>
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            window.location.href = 'images.html'; 
+        }
+
+        document.querySelector('iframe').addEventListener('load', function() {
+            var iframeWindow = this.contentWindow;
+
+            iframeWindow.document.querySelector('form').addEventListener('submit', handleFormSubmit);
+        });
+    </script>
+</body>
+</html>
